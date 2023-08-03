@@ -1,0 +1,776 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+    font-family: 'AbadiMT';
+    overflow-x: hidden;
+}
+
+@font-face {
+    font-family: 'AbadiMT';
+    src: url('AbadiMT-CondensedLight.eot');
+    src: url('AbadiMT-CondensedLight.eot?#iefix') format('embedded-opentype'),
+        url('AbadiMT-CondensedLight.woff2') format('woff2'),
+        url('AbadiMT-CondensedLight.woff') format('woff'),
+        url('AbadiMT-CondensedLight.ttf') format('truetype'),
+        url('AbadiMT-CondensedLight.svg#AbadiMT-CondensedLight') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'AbadiMT';
+    src: url('AbadiMT-CondensedExtraBold.eot');
+    src: url('AbadiMT-CondensedExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('AbadiMT-CondensedExtraBold.woff2') format('woff2'),
+        url('AbadiMT-CondensedExtraBold.woff') format('woff'),
+        url('AbadiMT-CondensedExtraBold.ttf') format('truetype'),
+        url('AbadiMT-CondensedExtraBold.svg#AbadiMT-CondensedExtraBold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+.row {
+  width: 100vw;
+  position: relative;
+  overflow: hidden;
+  color: black;
+}
+
+
+
+
+/* HEADER*/
+
+.navi {
+    background-color: #3d8769;
+    padding: 11px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contenair-navi {
+    max-width: 1700px;
+    margin-left: auto;
+    margin-right: auto;  
+}
+
+nav a {
+    display: block;
+    margin-left: 12px;
+    margin-right: 10px;
+    font-size: 5vw;
+    font-weight: bold;
+    color: #f4f5e8;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+nav a .actif, 
+nav a:hover{
+    color: #fdc852;
+}
+
+
+/* BANNIÈRE */
+
+.ban img {
+    max-width: 100%;
+    display: block;
+    border-bottom: 5px solid #3d8769;
+}
+
+
+/* SCROLL */
+
+.marquee-flex {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    padding: 3px 0;
+}
+
+h2{
+    font-size: 100px;
+    padding-top: 20px;
+    text-transform: uppercase; 
+    color: #3d8769;
+    line-height: 1;
+}
+
+.marquee-flex img {
+    width: 100px;
+}
+
+
+/* NOUVEAUTÉS */
+
+.nouveauté {
+    border-top: 5px solid #3d8769;
+    border-bottom: 5px solid #3d8769;
+}
+
+.contenair {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nouveauté-flex {
+    display: flex;
+    height: 570px;
+}
+
+.card {
+    width: calc(100% /3);
+    padding: 10px 20px 20px 20px;
+    background-size: cover ;
+    background-position: center;
+    position: relative;
+}
+
+.card-01 {
+    background-image: url(img/nouveauté-1.jpg);
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.card-02 {
+    background-image: url(img/nouveauté-3.jpg); 
+    display: flex;
+    justify-content: space-between;
+    align-items: end; 
+}
+
+.card-03 {
+    background-image: url(img/nouveauté-2.jpg);
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+h4 {
+    font-family: 'AbadiMT';
+    font-size: 45px;
+    font-weight: bold;
+    color: #2b5f49;
+    text-transform: uppercase; 
+    line-height:0.7;
+}
+
+.btn { 
+    font-weight: bold;
+    font-size: 25px; 
+    color: #f4f5e8;
+    text-transform: uppercase; 
+    text-decoration: none ;
+    background-color: #3d8769;
+    padding: 5px 10px;
+    box-shadow: 5px 5px #2b5f49;
+    transition: 0.5s;
+}
+
+.btn:hover {
+    color: #f4f5e8;
+    background-color: #fdc852;
+    box-shadow: 5px 5px #cc9932;
+}
+
+
+/* STIKERS */
+
+.nouveauté .sticker {
+    width: 130px;
+    position: absolute;
+    bottom: 120px;
+    right: -65px;
+    z-index: 1; 
+}
+
+.nouveauté .sticker2 {
+    width: 150px;
+    position: absolute;
+    top: 20px;
+    right: -75px;
+    z-index: 1;  
+}
+
+
+/* À PROPOS */
+
+.apropos {
+    background-color: #f4f5e8;
+    padding: 60px 0;
+    border-top: 5px solid #3d8769;
+    border-bottom: 5px solid #3d8769;
+}
+
+.contenair_apropos {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;   
+}
+
+.parent_flex_apropos {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 100px;
+}
+
+.right {
+    width: 35%;
+    
+}
+
+.left {
+    width: 65%;
+}
+
+.right img {
+    max-width: 100%;
+}
+
+.apropos h3{
+    font-size: 100px; 
+    color: #3d8769;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+.apropos p{
+    font-size: 20px; 
+    color: #3d8769;
+    margin-bottom: 70px;
+}
+
+
+/* MERCH */
+
+  .merch {
+    border-top: 5px solid #3d8769;
+    border-bottom: 5px solid #3d8769;
+  }
+  
+  .contenair_merch{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .parent_flex_merch {
+   display: flex;
+   height: 570px;
+  }
+  
+  .image {
+    width: calc(100% /3);
+    padding: 10px 20px 20px 20px;
+    background-size: cover ;
+    background-position: center;
+    position: relative;
+  }
+  
+  .merch-1{
+    background-image: url(img/cheddar.jpg);
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    border-right: 5px solid #3d8769;
+  }
+  
+  .merch-2{
+    background-image: url(img/pickles.jpg);
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    border-right: 5px solid #3d8769;
+  }
+  
+  .merch-3{
+    background-image: url(img/sauce.jpg);
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+  }
+
+.merch .card_merch .info{
+    padding: 5px 10px 25px;
+}
+
+/* Foodtruck */
+.foodtruck{
+    border-top: 5px solid #3d8769;
+    position: relative;
+}
+
+.animation-foodtruck{
+    position: absolute;
+    bottom: 18px;
+    right: 20%;
+    width: 700px;
+}
+
+.foodtruck.animated .animation-foodtruck{
+    animation: 4s camion forwards;
+}
+
+.truck{
+    transform: rotate(0deg);
+    transform-origin: bottom right;
+}
+
+@keyframes camion{
+    0%{
+        right: -730px;
+    }
+
+    100%{
+        right: 8%;
+    }
+}
+
+.foodtruck img {
+    max-width: 100%;
+    display: block;
+}
+
+
+
+/*CTA*/
+
+.cta {
+    background-color: #3d8769;
+    padding: 50px 0;
+}
+
+.contenair_cta {
+    width: 90%; 
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.cta h2 {
+    color: #f4f5e8;
+}
+
+.cta .btn { 
+    font-size: 65px; 
+    color: #f4f5e8;
+    text-transform: uppercase; 
+    text-decoration: none ;
+    background-color: #fdc852;
+    padding: 15px 20px 10px;
+    box-shadow: 5px 5px #cc9932;
+    transition: 0.5s;
+}
+
+.cta .btn:hover {
+    color: #f4f5e8;
+    background-color: #3d8769;
+    box-shadow: 5px 5px #2b5f49;
+}
+
+@media only screen and (max-width: 992px) {
+  
+ /* SCROLL */
+
+    .marquee-flex {
+        padding: 2px 0;
+    }
+    
+    h2{
+        font-size: 80px;
+        padding-top: 10px;
+        line-height: 1.2;
+    }
+
+/* NOUVEAUTÉS */   
+
+    .nouveauté-flex {
+        height: 500px;
+    }
+
+    .nouveauté .sticker {
+        width: 110px;
+        bottom: 93px;
+        right: -63px;
+    }
+    
+    .nouveauté .sticker2 {
+        width: 120px;
+        top: 20px;
+        right: -75px;
+    }
+
+    h4 {
+        font-size: 30px;
+        line-height: 0.7;
+    }
+    
+    .btn { 
+        font-size: 20px; 
+        padding: 2px 6px;
+        box-shadow: 4px 4px #2b5f49;
+
+    }
+    
+    .btn:hover {
+        box-shadow: 4px 4px #cc9932;
+    }
+
+/* À PROPOS */  
+
+    .parent_flex_apropos {
+        gap: 80px;
+    }
+
+    .right {
+        width: 30%;
+        
+    }
+    
+    .left {
+        width: 70%;
+    }
+
+    .apropos h3{
+        font-size: 80px; 
+        margin-bottom: 15px;
+    }
+
+/* MERCH */ 
+
+    .parent_flex_merch {
+        height: 480px;
+    }
+
+    .image {
+        padding: 15px 25px 25px 25px;
+      } 
+
+
+/* FOODTRUCK */       
+
+       .animation-foodtruck{
+        right: 10%;
+        width: 500px;
+    }
+
+/* CTA */     
+
+    .cta {
+        padding: 40px 0;
+    }
+    
+    
+    .cta h2 {
+        font-size: 65px;
+        color: #f4f5e8;
+    }
+    
+    .cta .btn { 
+        font-size: 40px; 
+        padding: 15px 20px 10px;
+        box-shadow: 5px 5px #cc9932;
+    }
+    
+    .cta .btn:hover {
+        box-shadow: 5px 5px #2b5f49;
+    }  
+}
+
+@media only screen and (max-width: 768px) {
+
+/* BANNIÈRE */
+
+.ban img {
+    border-bottom: 4px solid #3d8769;
+}
+
+
+/* SCROLL */   
+
+    .marquee-flex {
+        gap: 15px;
+        padding: 0;
+    }
+    
+    h2{
+        font-size: 55px;
+        padding-top: 9px;
+        line-height: 1;
+    }
+
+/* NOUVEAUTÉS */ 
+
+    .nouveauté {
+        border-top: 4px solid #3d8769;
+        border-bottom: 4px solid #3d8769;
+    }
+
+    .nouveauté-flex {
+        height: 350px;
+    }
+
+    .card {
+        padding: 10px 10px 15px 10px;
+    }
+
+    .nouveauté .sticker {
+        width: 90px;
+        bottom: 93px;
+        right: -45px;
+    }
+    
+    .nouveauté .sticker2 {
+        width: 100px;
+        top: 5px;
+        right: -50px; 
+    }
+
+    h4 {
+        font-size: 28px;
+        line-height: 0.7;
+    }
+    
+    .btn { 
+        font-size: 16px; 
+        padding: 2px 6px;
+        box-shadow: 3px 3px #2b5f49;
+
+    }
+    
+    .btn:hover {
+        box-shadow: 3px 3px #cc9932;
+    }
+
+ /* À PROPOS */  
+ 
+    .apropos {
+        padding: 40px 0;
+        border-top: 4px solid #3d8769;
+        border-bottom: 4px solid #3d8769;
+    }
+ 
+    .right {
+        width: 40%;
+    }
+
+    .left {
+        width: 60%;
+    }
+
+    .apropos p{
+        font-size: 14px; 
+        margin-bottom: 30px;
+    }
+
+    .apropos h3{
+        font-size: 60px; 
+        margin-bottom: 10px;
+    }
+
+ /* MERCH */    
+
+    .merch {
+        border-top: 4px solid #3d8769;
+        border-bottom: 4px solid #3d8769;
+    }
+
+    .image {
+        padding: 10px 10px 15px 10px;
+    }
+
+    .parent_flex_merch {
+        height: 400px;
+    }
+
+    .merch-1{
+        border-right: 4px solid #3d8769;
+      }
+      
+      .merch-2{
+        border-right: 4px solid #3d8769;
+      }
+
+ /* FOODTRUCK */ 
+
+    .foodtruck{
+        border-top: 4px solid #3d8769;
+    }
+    
+    .animation-foodtruck{
+        width: 350px;
+    }
+
+ /* CTA */    
+
+    .cta {
+        padding: 30px 0;
+    }
+        
+    .cta h2 {
+        font-size: 40px;
+    }
+    
+    .cta .btn { 
+        font-size: 25px; 
+        padding: 10px 15px 5px;
+        box-shadow: 4px 4px #cc9932;
+    }
+    
+    .cta .btn:hover {
+        box-shadow: 4px 4px #2b5f49;
+    }
+
+}
+
+@media only screen and (max-width: 576px) {
+
+/* SCROLL */  
+
+    .marquee-flex {
+        gap: 12px;
+    }
+
+    .marquee-flex img {
+    width: 60px;
+    }
+
+    h2{
+        font-size: 35px;
+        padding-top: 6px;
+        line-height: 1;
+    }
+
+/* NOUVEAUTÉS */ 
+
+    .card {
+        padding: 10px 20px 20px 20px;
+    }
+
+    .nouveauté-flex {
+        height: 300px;
+    }
+
+    h4 {
+        font-size: 20px;
+        line-height: 0.8;
+    }
+
+    .nouveauté .sticker {
+        width: 60px;
+        bottom: 68px;
+        right: -33px;
+    }
+    
+    .nouveauté .sticker2 {
+        width: 66px;
+        top: 12px;
+        right: -33px; 
+    }
+
+/* À PROPOS */ 
+
+    .apropos {
+        padding: 40px 0;
+    }
+
+    .parent_flex_apropos {
+        gap: 30px;
+    }
+
+    .right {
+        width: 40%;
+        
+    }
+    
+    .left {
+        width: 60%;
+    }
+    
+    .apropos h3{
+        font-size: 50px; 
+        margin-bottom: 10px;
+    }
+    
+    .apropos p{
+        font-size: 14px; 
+        margin-bottom: 30px;
+    }
+
+/* MERCH */    
+
+    .image {
+        padding: 10px 20px 20px 20px;
+    }
+
+    .parent_flex_merch {
+        height: 300px;
+    }
+    
+    .btn { 
+        font-size: 14px; 
+        padding: 2px 4px;
+        box-shadow: 3px 3px #2b5f49;
+    }
+    
+    .btn:hover {
+        box-shadow: 3px 3px #cc9932;
+    }
+
+    
+/* FOODTRUCK */ 
+    
+       .animation-foodtruck{
+        width: 250px;
+    }
+
+/* CTA */ 
+
+    .cta {
+        padding: 20px 0;
+    }
+
+    .cta h2 {
+        font-size: 40px;
+    }
+    
+    .cta .btn { 
+        font-size: 25px; 
+        padding: 5px 10px 5px;
+        box-shadow: 3px 3px #cc9932;
+    }
+
+    .cta .btn:hover {
+        box-shadow: 3px 3px #2b5f49;
+    }
+
+}
+
+ 
+
+
+
+
+
+
+
+
+
+
