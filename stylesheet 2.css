@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'AbadiMT';
+    src: url('AbadiMT-CondensedLight.eot');
+    src: url('AbadiMT-CondensedLight.eot?#iefix') format('embedded-opentype'),
+        url('AbadiMT-CondensedLight.woff2') format('woff2'),
+        url('AbadiMT-CondensedLight.woff') format('woff'),
+        url('AbadiMT-CondensedLight.ttf') format('truetype'),
+        url('AbadiMT-CondensedLight.svg#AbadiMT-CondensedLight') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
